@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-purple {
+    background-color: #5B327C;
+}
+
+.bg-pink {
+    background-color: #C73D66;
+}
+
+/*-- Header section start --*/
+header {
+    background-color: #101B39;
+    color: white;
+}
+
+#home {
+    color: #C73D66;
+}
+
+header ul {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+header ul li .nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+header ul li .nav-link:hover {
+    color: #C73D66;
+}
+
+header .btn {
+    color: rgb(52, 214, 52);
+}
+
+/*-- Header section end --*/
+/*-- Banner section start --*/
+main {
+    height: auto;    
+    padding: auto;
+}
+
+main h1 {
+    font-weight: 400;
+    font-size: 60px;
+}
+
+main .row .nav-pills .nav-link {
+    background-color: rgb(77, 34, 116);
+    padding: 7px 15px;
+    margin: 0px 5px;
+    color: white;
+    border-radius: 0px;
+}
+
+main .row .nav-pills .nav-link.active {
+    background-color: #C73D66;
+}
+
+/*-- Banner section end --*/
+/*-- Fun section start --*/
+#fun {
+    background: linear-gradient(rgba(21, 22, 22, 0.8), rgba(3, 0, 12, 0.7));
+    
+    height: auto;
+}
+
+#fun h2 {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#fun .row .box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+#fun .row .box h3 {
+    font-weight: 400;
+    font-size: medium;
+}
+
+#fun .row .box h4 {
+    font-weight: 500;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+/*-- Fun section end --*/
+/*-- Subscribe section start --*/
+#subscribe {
+    height: auto;
+    justify-items: end;
+}
+
+#subscribe input {
+    height: 50px;
+    font-size: 17px;
+    border: 2px solid #fafaff;
+    width: 50%;
+    padding: 0px 25px;
+    transition: all 0.5s;
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
+
+#subscribe input::placeholder {
+    color: white;
+}
+
+#subscribe input:focus {
+    border: 2px solid rgb(112, 112, 224);
+    outline: none;
+}
+
+#subscribe button {
+    font-size: 17px;
+    background-color: white;
+    color: rgb(112, 112, 224);
+    font-weight: 500;
+    height: 50px;
+    width: 150px;
+    border: 2px solid rgb(112, 112, 224);
+}
+
+/*-- Subscribe section end --*/
+/*-- Destinations section start --*/
+#destination {
+    background-color: #1F172F;
+}
+
+#destination h2 {
+    margin-bottom: 20px;
+}
+
+#destination .row .box {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#destination .row .box img {
+    width: 100%;
+}
+
+/*-- Destinations section end --*/
+/*-- Estimate section start --*/
+#estimate {
+    background-color: #664CAD;
+}
+
+.estimate {
+    height: auto;
+    background-size: 15%;
+    background-position: right bottom;
+}
+
+#estimate h4 {
+    margin-top: -10px;
+    font-weight: 400;
+    font-size: larger;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+#estimate h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 8%;
+    left: 1%;
+    border-bottom: 2px solid #F58E08;
+    align-items: start;
+}
+
+#estimate .btn {
+    background-color: #fafaff;
+    color: black;
+    border-radius: 0px;
+    width: 100%;
+}
+
+#estimate .submit {
+    background-color: #F58E08;
+}
+
+#estimate .btn::placeholder {
+    color: black;
+    overflow: hidden;
+}
+/*-- Estimate section end --*/
+/*-- Blog section start --*/
+#blog {
+    padding: 0;
+}
+
+#blog .box {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(222, 248, 248);
+    height:min-content;
+}
+
+#blog .box img {
+    border-radius: 10px;
+    width: 30%;
+    position: static;
+    height: 180px;
+}
+
+#blog h5 {
+    font-size: larger;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+#blog h5::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    border-bottom: 2px solid #F58E08;
+    align-items: start;
+}
+
+#blog .dot img {
+    width: 80px;
+    padding-bottom: 20px;
+}
+/*-- Blog section end --*/
+/*-- Footer section start --*/
+footer{
+    background-color: #1D1928;
+    height: auto;
+}
+footer .row h4{
+    font-weight: 400;
+    font-size: x-large;
+}
+footer .row ul li{
+    list-style: none;
+    color: grey;
+} 
+footer .row ul li span{
+    color:white;
+    font-weight: bold;
+}
+footer #copyright{
+    display: flex;
+}
+footer #copyright img{
+  width: 50px;
+}
+footer #copyright ul li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-items: start;
+
+}
+footer #copyright ul .icon{
+    color: gray;
+    display: flex;
+    width: 30px;
+}
+/*-- Footer section end --*/
+
+/***---- Page Responsive (Media Screen) ----***/
+/*-- Media Screen 992px start --*/
+@media screen and (max-width: 992px) {
+    #subscribe {
+        justify-items: center;
+    }
+
+    #estimate {
+        background-size: 30%;
+    }
+
+    #estimate h4::after {
+        width: 10%;
+        left: 2%;
+
+    }
+}
+
+/*-- Media Screen 992px end --*/
+/*-- Media Screen 768px start --*/
+@media screen and (max-width: 768px) {
+    main h1 {
+        font-weight: 400;
+        font-size: 50px;
+    }
+}
+
+/*-- Media Screen 768px end --*/
+
+/*-- Media Screen 576px start --*/
+@media screen and (max-width: 576px) {
+    main h1 {
+        font-weight: 400;
+        font-size: 40px;
+    }
+}
+
+/*-- Media Screen 576px end --*/
+/*-- Media Screen 476px start --*/
+@media screen and (max-width: 576px) {
+    main h1 {
+        font-weight: 400;
+        font-size: 35px;
+    }
+
+    #estimate {
+        background-size: 30%;
+    }
+
+    #estimate h4::after {
+        width: 10%;
+        left: 3%;
+
+    }
+
+    #blog .box img {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #blog .box .date {
+        padding-top: 10px;
+    }
+    
+}
+
+/*-- Media Screen 476px end --*/
