@@ -107,6 +107,7 @@ main .row .nav-pills .nav-link.active {
 #subscribe {
     height: auto;
     justify-items: end;
+    background-size: cover;
 }
 
 #subscribe input {
